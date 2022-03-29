@@ -1,13 +1,14 @@
 {
   "name": "business-dayjs",
   "description": "business dayjs",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "author": "shunitoh",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "lint": "find ./src -name *.ts | xargs prettier --write",
-    "build": "webpack --mode=production --config=webpack.config.js"
+    "build": "webpack --mode=production --config=webpack.config.js",
+    "publish": "npm publish --access=public"
   },
   "dependencies": {
     "date-holidays": "^3.14.4",
@@ -25,12 +26,8 @@
     "webpack-cli": "^4.9.2"
   },
   "ava": {
-    "extensions": [
-      "ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
+    "extensions": ["ts"],
+    "require": ["ts-node/register"],
     "timeout": "5m"
   }
 }
