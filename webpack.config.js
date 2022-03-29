@@ -1,11 +1,9 @@
 'use strict';
 const path = require('path');
 module.exports = (env, argv) => {
-  const IS_DEVELOPMENT = argv.mode === 'development';
   const IS_NONE = argv.mode === 'none';
   let config = {
     target: 'node',
-    devtool: IS_DEVELOPMENT || IS_NONE ? 'source-map' : 'none',
     externals: /^(?![.]+\/)/,
     context: path.join(__dirname, 'src'),
     entry: './index.ts',
