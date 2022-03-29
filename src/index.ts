@@ -5,7 +5,12 @@ import "dayjs/locale/ja";
 dayjs.locale("ja");
 const hd = new Holidays("JP");
 
-export const addHoliday = (day, mode: 'subtract' | 'add', num, unit: "hours" | "days" = "hours") => {
+export const addHoliday = (
+  day,
+  mode: "subtract" | "add",
+  num,
+  unit: "hours" | "days" = "hours"
+) => {
   let targetDay = dayjs(day);
   let days = unit === "hours" ? Math.ceil(num / 24) : num;
   let holidayCount = 0;
@@ -22,6 +27,6 @@ export const addHoliday = (day, mode: 'subtract' | 'add', num, unit: "hours" | "
 };
 
 export const subtract = (day, num, unit: "hours" | "days" = "hours") =>
-  dayjs(day).subtract(addHoliday(day, 'subtract', num, unit), unit);
+  dayjs(day).subtract(addHoliday(day, "subtract", num, unit), unit);
 export const add = (day, num, unit: "hours" | "days" = "hours") =>
-    dayjs(day).add(addHoliday(day, 'add', num, unit), unit);
+  dayjs(day).add(addHoliday(day, "add", num, unit), unit);
