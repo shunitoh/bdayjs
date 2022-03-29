@@ -1,5 +1,5 @@
 import test from "ava";
-import addHoliday, { add, subtract } from "./index";
+import{ addHoliday, add, subtract } from "./index";
 
 test("60時間遡る 休日が3日ある 対象日が休日 hour単位", (t) => {
   // 1/10(成人式) => +24, 1/9(日) => +24, 1/8(土) => +24, 1/7, 1/6, 1/5
