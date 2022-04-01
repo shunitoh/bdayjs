@@ -10,7 +10,8 @@ module.exports = (env, argv) => {
     output: {
       path: path.join(__dirname, 'dist'),
       filename: 'index.js',
-      libraryTarget: 'commonjs2',
+      libraryTarget: 'umd',
+      globalObject: 'this',
     },
     node: {
       __dirname: false,
