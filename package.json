@@ -5,6 +5,7 @@
   "author": "shunitoh",
   "repository": "https://github.com/shunitoh/bdayjs.git",
   "main": "dist/index.js",
+  "types": "dist",
   "license": "MIT",
   "scripts": {
     "build": "webpack --mode=production --config=webpack.config.js",

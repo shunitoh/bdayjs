@@ -10,6 +10,8 @@ module.exports = (env, argv) => {
     output: {
       path: path.join(__dirname, 'dist'),
       filename: 'index.js',
+      library: 'BusinessDay',
+      libraryExport: 'default',
       libraryTarget: 'umd',
       globalObject: 'this',
     },
