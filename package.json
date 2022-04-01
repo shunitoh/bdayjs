@@ -1,7 +1,7 @@
 {
   "name": "business-dayjs",
   "description": "business dayjs",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "author": "shunitoh",
   "repository": "https://github.com/shunitoh/bdayjs.git",
   "main": "dist/index.js",
