@@ -11,8 +11,7 @@ module.exports = (env, argv) => {
       path: path.join(__dirname, 'dist'),
       filename: 'index.js',
       library: 'BusinessDay',
-      libraryExport: 'default',
-      libraryTarget: 'umd',
+      libraryTarget: 'var',
       globalObject: 'this',
     },
     node: {
