@@ -14,7 +14,7 @@ type BusinessDayType = {
   country?: HolidaysTypes.Country | string;
 };
 
-export default class BusinessDay {
+export class BusinessDay {
   private readonly hd;
   private readonly dj;
   constructor(request: BusinessDayType) {

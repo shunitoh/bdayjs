@@ -1,6 +1,6 @@
 import test from "ava";
 import dayjs from "dayjs";
-import BusinessDay from "./";
+import {BusinessDay} from "./";
 import "dayjs/locale/ja";
 dayjs.locale("ja");
 const businessDay = new BusinessDay({dj: dayjs, country: 'JP'})
